@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>calculadora</h1>
+
+
+    <main id="corpo" >
+
+        <div id="his"><select name="lis" id="lis" size="1"> <option id="relogio" value="0">🕒</option></select></div>
+
+        <input type="text" name="historico" id="historico" disabled>
+
+        <header><input type="text" name="painel" id="painel" disabled></header>
+        
+
+
+
+        <section >
+
+             <!--(sinais)-->
+
+           <button class="operadores" value="+" onclick="operar(this.value)">+</button>
+           <button class="operadores" value="-" onclick="operar(this.value)">-</button>
+           <button class="operadores" value="*" onclick="operar(this.value)">×</button>
+           <button class="operadores" value="/" onclick="operar(this.value)">÷</button>
+           <button class="operadores" value="**" onclick="operar(this.value)">*</button>
+           <button class="operadores" value="%" onclick="operar(this.value)">%</button>
+           
+
+
+        
+             <!--(numeros)-->
+
+             <button class="number" value="0" onclick="adicionar(this.value)">0</button>
+             <button class="number" value="1" onclick="adicionar(this.value)">1</button>
+             <button class="number" value="2" onclick="adicionar(this.value)">2</button>
+             <button class="number" value="3" onclick="adicionar(this.value)">3</button>
+             <button class="number" value="4" onclick="adicionar(this.value)">4</button>
+             <button class="number" value="5" onclick="adicionar(this.value)">5</button>
+             <button class="number" value="6" onclick="adicionar(this.value)">6</button>
+             <button class="number" value="7" onclick="adicionar(this.value)">7</button>
+             <button class="number" value="8" onclick="adicionar(this.value)">8</button>
+             <button class="number" value="9" onclick="adicionar(this.value)">9</button>
+
+            
+        
+            <!--(opções)-->
+
+    
+            <button class="options" id="delet"   onclick = "delet(this.value)">delet</button>
+            <button class="options" id="ponto"  onclick = "ponto(this.value)">.</button>
+            <button class="options" id="result"  onclick = "calcular(this.value)" >=</button>
+            <button class="options" id="voltar" onclick="voltar(this.value)"  >⩤</button>
+        
+        </section>
+    </main>
+
+
+    <script src="calc.js"></script>
+</body>
+</html>
