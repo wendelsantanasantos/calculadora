@@ -1,0 +1,133 @@
+body{
+    background-image: linear-gradient(to right, rgb(32, 18, 32) , rgb(19, 8, 26));
+    font-family:Arial, Helvetica, sans-serif ;
+    color: aliceblue;
+    text-align: center;
+}
+
+#hist{
+    text-align:right;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-right: 20px;
+    transition: 1s;
+}
+
+#lis{
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+    background-color:#ffffffe7;
+    color: rgb(94, 93, 93);
+    position: absolute;
+}
+
+#lis>p{
+    width: 340px;
+    border: solid rgba(0, 0, 0, 0.774) 1px;
+    padding: 5px;
+    margin: auto;
+    overflow-x: hidden; /* oculta o texto que ultrapassar o tamanho da div */
+    text-overflow: ellipsis; /* adiciona reticências (...) quando o texto é cortado */
+    white-space: nowrap; /* impede que o texto seja quebrado em várias linhas */
+}
+
+#painel{
+    overflow-x: hidden; 
+    text-overflow: ellipsis; 
+    background-color: rgb(235, 231, 231);
+    margin: auto;
+    color: black;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 360px;
+    height: 80px;
+    box-sizing: border-box;    
+    margin-bottom: 5px;
+    border-style: none;
+    box-shadow: 0px  5px 5px rgba(0, 0, 0, 0.226);
+}
+
+#historico{
+    overflow-x: hidden; 
+    text-overflow: ellipsis; 
+    background-color: rgb(235, 231, 231);
+    margin: auto;
+    color: rgb(68, 68, 68);
+    width: 360px;
+    font-size:0.8em;
+    box-sizing: border-box;    
+    border-style: none;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+main{
+    width: 360px;
+    height: 570px;
+    background-color: rgb(51, 51, 51);
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+button{
+    color: rgb(44, 44, 44);
+    display: inline-block; 
+    box-sizing: border-box;
+    padding: 1px;
+    margin: 3px;
+    margin-top: 4px;
+    width: 100px;
+    height: 50px;
+    border-style: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+    transition: 0.5s;
+}
+
+button:hover{
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.699);
+}
+
+section{
+    margin: auto;
+    display: table;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.operadores {
+    background-color: rgb(145, 140, 140);
+}
+
+.operadores:hover {
+     background-color: rgba(0, 255, 255, 0.808);
+}
+
+.options{
+    background-color: rgb(189, 160, 136);
+}
+.options:hover {
+    background-color: rgb(182, 168, 155);
+}
+
+#result{
+    background-color: rgb(255, 166, 0);
+}
+#result:hover {
+    background-color: rgb(255, 187, 0);
+}
+
+.number {
+    background-color: rgb(214, 206, 206);
+    transition: 0.5s;
+}
+
+.number:hover {
+     background-color: rgba(0, 255, 255, 0.808);
+}
+
+.remove{
+    display: none;
+}
