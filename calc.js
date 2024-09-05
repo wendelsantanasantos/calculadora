@@ -1,5 +1,4 @@
 
-let contador = 1;
 let valor1 = '';
 let valor2 = '';
 let operador = '';
@@ -37,10 +36,14 @@ function operar(op) {
 
     if (operador && valor2 !== '') { // Se já temos um operador e um valor2, calculamos antes de continuar
       calcular()}
-
+      
     if(!operador){
        operador = op;
-    visor.value += op;
+       visor.value += op;
+    }
+    else{
+     operador = op
+     visor.value = valor1 + operador
     }
   }
 
@@ -92,10 +95,6 @@ function calcular() {
     }
     if (item.textContent !== '') {
         list.appendChild(item);
-        item.value = contador; // Define um valor para a opção (opcional)
-         // Incrementa o contador para distinguir as opções
-        contador++
-         
         histo = []
     }
 

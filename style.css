@@ -14,15 +14,19 @@ body{
 }
 
 #lis{
+    width: 350px;
+    max-height: 300px;
     border-radius: 0px 0px 5px 5px;
-    padding: 5px;
+    padding: 4px;
     background-color:#ffffffe7;
     color: rgb(94, 93, 93);
     position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #lis>p{
-    width: 340px;
+    width: 270px;
     border: solid rgba(0, 0, 0, 0.774) 1px;
     padding: 5px;
     margin: auto;
